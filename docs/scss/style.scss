@@ -1,0 +1,46 @@
+//подключение плагинов
+
+//Abstracts
+@import "./abstracts/_functions";
+@import "./abstracts/_mixins";
+@import "./abstracts/_setting";
+@import "./abstracts/_variables";
+//Base
+@import "./base/_fonts";
+@import "./base/_generic";
+//Components
+@import "./components/_link";
+@import "./components/_icons";
+@import "./components/_title";
+//  Пример подключения стилей блоков
+@import "./blocks/_header";
+@import "./blocks/_quotes";
+@import "./blocks/_news";
+@import "./blocks/_footer";
+.page {
+    max-width: 960px;
+    min-width: 360px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 960px;
+    @media (max-width: 1000px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 767px) {
+        padding: 0 10px;
+    }
+}
+.text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+}

@@ -1,0 +1,66 @@
+.quotes__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 0 25px 0;
+    @media (max-width: 1000px) {
+        justify-content: start;
+    }
+    @media (max-width: 767px) {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .quotes__block {
+        display: flex;
+        .quotes__banner {
+            position: relative;
+            &::after {
+                content: "";
+                background: rgba(253, 255, 140, 0.49);
+                height: 99.2%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+            .foto {
+                background-size: cover;
+                background-position: center;
+
+                @media (max-width: 1000px) {
+                    width: 546px;
+                    height: 319px;
+                }
+                @media (max-width: 767px) {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .quotes__text {
+            width: 255px;
+            height: 319px;
+            background-color: $blue;
+            @media (max-width: 1000px) {
+                display: none;
+            }
+        }
+    }
+    .quotes__description {
+        width: 180px;
+        height: 319px;
+        background-color: $gray;
+        @media (max-width: 1000px) {
+            width: 100%;
+            min-width: 180px;
+            height: 319px;
+        }
+        @media (max-width: 767px) {
+            margin-top: 17px;
+        }
+    }
+}

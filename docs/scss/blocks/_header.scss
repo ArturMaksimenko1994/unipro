@@ -1,0 +1,35 @@
+.header {
+    &__row {
+        @media (max-width: 1000px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header__logo {
+            padding: 20px 0 8px 40px;
+            @media (max-width: 960px) {
+                padding: 20px 0 7px 20px;
+            }
+            .header__link {
+                display: inline-block;
+            }
+        }
+        .header__menu {
+            max-width: 960px;
+            height: 39px;
+            background-color: $blue;
+            @media (max-width: 1000px) {
+                width: 42px;
+                height: 42px;
+            }
+            .menu__link {
+                list-style-type: none;
+                padding: 0;
+                margin-left: 0;
+                .menu__item {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+// link
+.link__item {
+    display: inline-block;
+    color: #34aadd;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link__item:after {
+    background-color: #34aadd;
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz--transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+}
+.link__item:hover:after,
+.link__item:focus:after {
+    width: 100%;
+}
